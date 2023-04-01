@@ -1,0 +1,24 @@
+
+
+
+<div class="container mx-auto col-lg-4 border rounded-3 bg-warning mt-5 p-5" style="height: 400px;">
+
+  <form action="" [formGroup]="formdata" (ngSubmit)="submit(formdata.value)">
+
+    <h1>login</h1>
+
+    <label for="username">username:</label>
+    <input type="text" class="form-control" formControlName="username">
+
+    <br>
+
+    <label for="password">password</label>
+    <input type="password" class="form-control" formControlName="password">
+
+    <div class="col-lg-12 text-center mt-4">
+      <input type="submit" class="btn btn-primary" [disabled]="formdata.invalid">
+    </div>
+
+  </form>
+
+</div>
